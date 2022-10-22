@@ -4,10 +4,9 @@ const write = require ('./write')
 const del = require ('./del')
 const present = require ('./present')
 const update = require ('./update')
+const data = process.argv
 
 //get user input
-const data = process.argv
-//const note = {}
 if (data [2] === "add"){ 
 
 //build object
@@ -32,12 +31,11 @@ if (data[2]==='read') {
 
 }
 if (data[2] == "delete"){
-  //const id=cmd[3]
+  
   const oldNote=read()
-  //const del=require('./del) 
-   //delete an item from note array
-   //del (id,oldNote)
-   //console.log(read())
+  
+
+   
    const id =data[3]
 
    del(id,oldNote)
