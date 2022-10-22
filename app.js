@@ -54,6 +54,6 @@ if (data[2] == "delete"){
 
   update(note,oldNote)
   
-  console.log(update);
+  console.log(update); 
 
 }
